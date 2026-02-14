@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Critical Mass (MASS) - LIVE TEST</title>
+ <title>Critical Mass (MASS)</title>
 
 
   <!-- Basic SEO -->
@@ -85,15 +85,16 @@
     .navlinks a:hover{ color: var(--text); text-decoration:none; }
 
     /* Sections */
-    main{ padding: 2.2rem 0 3.2rem; }
-    section{ padding: 2.1rem 0; }
-    .panel{
-      background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.015));
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 1.5rem;
-    }
+     main{ padding: 2.8rem 0 3.8rem; }
+     section{ padding: 3.2rem 0; }
+   .panel{
+  background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.75rem;
+}
+
 
     /* Hero */
     .hero{
@@ -104,12 +105,14 @@
       font-size: clamp(2rem, 4.2vw, 3rem);
       letter-spacing: .2px;
     }
-    .hero p{
-      margin: 0 0 1.2rem 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 60ch;
-    }
+   .hero p{
+  margin: 0 0 1.2rem 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
     .ctaRow{
       display:flex;
       flex-wrap: wrap;
@@ -150,10 +153,12 @@
       .grid{ grid-template-columns: 1fr 1fr; }
     }
 
-    h2{
-      margin: 0 0 .6rem 0;
-      font-size: 1.35rem;
-    }
+  h2{
+  margin: 0 0 .9rem 0;
+  font-size: 1.6rem;
+  letter-spacing: .2px;
+}
+
     .muted{ color: var(--muted); }
     ul{ margin: .65rem 0 0; padding-left: 1.2rem; color: var(--muted); }
     li{ margin: .35rem 0; }
@@ -239,10 +244,22 @@
       text-decoration: none;
     }
     .pill:hover{ text-decoration:none; filter: brightness(1.06); }
-  </style>
+ .panel, .pill, .btn, .copybtn{
+  transition: transform .12s ease, filter .12s ease, border-color .12s ease;
+}
+
+.panel:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,.12);
+}
+
+.pill:hover, .btn:hover, .copybtn:hover{
+  transform: translateY(-1px);
+}
+ </style>
 </head>
 
-<body>
+  <body>
   <header>
     <div class="wrap">
       <div class="nav">
