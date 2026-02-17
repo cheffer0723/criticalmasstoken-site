@@ -66,10 +66,7 @@ BaseScan: https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212
 
 Whitepaper (v1.1): https://criticalmasstoken.com/Critical_Mass_Whitepaper_v1.1.pdf
 
-## Market Data
-
-Live decentralized exchange data available via:
-- GeckoTerminal: https://www.geckoterminal.com/base/pools
+GeckoTerminal: https://www.geckoterminal.com/base/pools/0xfc2355c83070051970becc367fc9fe14b0cf3b57
 
 Status
 
