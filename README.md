@@ -69,7 +69,7 @@ Whitepaper (v1.1): https://criticalmasstoken.com/Critical_Mass_Whitepaper_v1.1.p
 ## Market Data
 
 Live decentralized exchange data available via:
-- GeckoTerminal: https://www.geckoterminal.com/base/pools/YOUR_POOL_ID
+- GeckoTerminal: https://www.geckoterminal.com/base/pools
 
 Status
 
