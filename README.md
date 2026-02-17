@@ -66,6 +66,11 @@ BaseScan: https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212
 
 Whitepaper (v1.1): https://criticalmasstoken.com/Critical_Mass_Whitepaper_v1.1.pdf
 
+## Market Data
+
+Live decentralized exchange data available via:
+- GeckoTerminal: https://www.geckoterminal.com/base/pools/YOUR_POOL_ID
+
 Status
 
 Critical Mass is an early-stage structural experiment.
