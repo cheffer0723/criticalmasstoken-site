@@ -256,6 +256,32 @@
 .pill:hover, .btn:hover, .copybtn:hover{
   transform: translateY(-1px);
 }
+
+/* Mobile polish */
+@media (max-width: 700px) {
+  header {
+    padding: 14px 16px;
+  }
+
+  /* If your nav is a <nav> with links inside */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 999px;
+  }
+
+  /* Give the brand/title area more breathing room */
+  .brand, .logo, .site-title {
+    max-width: 55%;
+  }
+}
  </style>
 </head>
 
