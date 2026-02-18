@@ -124,7 +124,12 @@
   background-size: 84px 84px;
   mask-image: radial-gradient(circle at 50% 30%, rgba(0,0,0,1) 0%, rgba(0,0,0,.45) 52%, rgba(0,0,0,0) 74%);
 }
-
+.ctaRow{
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
   </style>
 </head>
 
@@ -347,5 +352,17 @@
 main.wrap {
   background: var(--bg);
   color: var(--text);
+}
+.hero .panel{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.2rem;
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.05),
+    rgba(255,255,255,.02)
+  );
+  border: 1px solid rgba(255,255,255,.08);
 }
 
