@@ -16,6 +16,23 @@
   <meta property="og:description" content="A long-term community experiment on Base focused on shared ownership, transparency, and gradual governance." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://criticalmasstoken.com/" />
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/assets/favicon.png" />
+
+  <!-- Social images -->
+  <meta property="og:image" content="https://criticalmasstoken.com/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Critical Mass (MASS)" />
+  <meta name="twitter:description" content="A long-term community experiment on Base focused on shared ownership, transparency, and gradual governance." />
+  <meta name="twitter:image" content="https://criticalmasstoken.com/assets/og.png" />
+
+  <!-- UI hint -->
+  <meta name="theme-color" content="#0b0b0b" />
 
   <style>
     :root{
@@ -70,6 +87,13 @@
       flex-direction: column;
       line-height: 1.1;
     }
+    .brand{
+  color: inherit;
+  text-decoration: none;
+  }
+  .brand:hover{
+  text-decoration: none;
+  }
     .brand strong{ font-size: 1.02rem; letter-spacing:.2px; }
     .brand span{ font-size: .85rem; color: var(--muted2); }
 
@@ -259,46 +283,48 @@
 
 /* Mobile polish */
 @media (max-width: 700px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 16px;
-  }
+  .wrap { padding: 0 16px; }
+
+  header { padding: 0; }
 
   .nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 16px;
-    width: 100%;
+    padding: 14px 0;
+    gap: 10px 14px;
+    align-items: flex-start;
   }
 
-  .nav a {
+  .navlinks {
+    gap: 10px 12px;
     font-size: 14px;
   }
 
-  .brand, .logo, .site-title {
-    max-width: 100%;
+  .navlinks a {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.02);
   }
+
+  .brand { max-width: 100%; }
 }
  </style>
 </head>
 
-  <body>
+ <body id="top">
   <header>
     <div class="wrap">
       <div class="nav">
-        <div class="brand">
-          <strong>Critical Mass (MASS)</strong>
-          <span>Community experiment on Base</span>
-        </div>
-        <nav class="navlinks" aria-label="Primary">
+        <a href="#top" class="brand">
+           <strong>Critical Mass (MASS)</strong>
+           <span>Community experiment on Base</span>
+          </a>
+          <nav class="navlinks" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#token">Token</a>
           <a href="#governance">Governance</a>
           <a href="#transparency">Transparency</a>
           <a href="#links">Links</a>
+          <a href="https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212" target="_blank" rel="noopener noreferrer">Contract</a>
         </nav>
       </div>
     </div>
