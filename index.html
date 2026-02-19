@@ -158,26 +158,35 @@ body{
    <style>
   /* your existing CSS */
 
-  .hero-logo{
-    display:flex;
-    justify-content:center;
-    margin: 18px 0 22px;
-  }
+.hero-logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  margin: 18px auto 22px;
+}
   
-.hero-logo img{
+  .hero-logo img{
+  display:block;
+  margin: 0 auto;
+  max-width: 100%;
   width: min(420px, 82vw);
   height: auto;
-  display:block;
   filter:
     drop-shadow(0 0 14px rgba(90, 150, 255, 0.35))
     drop-shadow(0 0 34px rgba(90, 150, 255, 0.18));
 }
+
+
 @media (max-width: 700px){
   .hero .panel{
     padding: 1.4rem;
   }
   .hero-logo{
     margin: 14px auto 18px;
+  }
+  .hero-logo img{
+    width: 92vw;
   }
 }
 
