@@ -1,3 +1,5 @@
+Public-facing website for the Critical Mass (MASS) on-chain experiment, built for clarity, transparency, and long-term structure.
+
 Critical Mass (MASS)
 
 Critical Mass (MASS) is a long-term on-chain experiment deployed on the Base network. It explores collective attention, voluntary coordination, and structural governance evolution over extended time horizons.
