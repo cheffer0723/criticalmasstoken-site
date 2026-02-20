@@ -1,426 +1,575 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Critical Mass (MASS)</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Critical Mass (MASS)</title>
 
-  <!-- Basic SEO -->
-  <meta name="description" content="Critical Mass (MASS) is a long-term community experiment on Base focused on shared ownership, transparency, and gradual governance." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://criticalmasstoken.com/" />
+    <!-- Basic SEO -->
+    <meta
+      name="description"
+      content="Critical Mass (MASS) is a long-term community experiment on Base focused on shared ownership, transparency, and gradual governance."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://criticalmasstoken.com/" />
 
-  <!-- Social preview -->
-  <meta property="og:title" content="Critical Mass (MASS)" />
-  <meta property="og:description" content="A long-term community experiment on Base focused on shared ownership, transparency, and gradual governance." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://criticalmasstoken.com/" />
-  <meta property="og:image" content="https://criticalmasstoken.com/assets/og.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+    <!-- Social preview -->
+    <meta property="og:title" content="Critical Mass (MASS)" />
+    <meta
+      property="og:description"
+      content="A long-term community experiment on Base focused on shared ownership, transparency, and gradual governance."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://criticalmasstoken.com/" />
+    <meta
+      property="og:image"
+      content="https://criticalmasstoken.com/assets/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Critical Mass (MASS)" />
-  <meta name="twitter:description" content="A long-term community experiment on Base focused on shared ownership, transparency, and gradual governance." />
-  <meta name="twitter:image" content="https://criticalmasstoken.com/assets/og.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Critical Mass (MASS)" />
+    <meta
+      name="twitter:description"
+      content="A long-term community experiment on Base focused on shared ownership, transparency, and gradual governance."
+    />
+    <meta
+      name="twitter:image"
+      content="https://criticalmasstoken.com/assets/og.png"
+    />
 
-  <!-- Favicons -->
-  <link rel="icon" href="/assets/favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/assets/favicon.png" />
+    <!-- Favicons -->
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/favicon.png" />
 
-  <!-- Browser theme color -->
-  <meta name="theme-color" content="#0b0b0b" />
+    <!-- Browser theme color -->
+    <meta name="theme-color" content="#0b0b0b" />
 
-  <style>
-    :root{
-      --bg:#0b0b0b;
-      --text:#f5f5f5;
-      --muted:#cfcfcf;
-      --muted2:#a8a8a8;
-      --line:#242424;
-      --link:#f5f5f5;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 14px;
-      --max: 980px;
-    }
+    <style>
+      :root {
+        --bg: #0b0b0b;
+        --text: #f5f5f5;
+        --muted: #cfcfcf;
+        --muted2: #a8a8a8;
+        --line: #242424;
+        --link: #f5f5f5;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        --radius: 14px;
+        --max: 980px;
+      }
 
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
-body{
-  background:
-    radial-gradient(700px 400px at 50% 25%, rgba(100,150,255,.10), transparent 70%),
-    radial-gradient(1000px 600px at 50% 10%, rgba(60,95,170,.38), transparent 65%),
-    radial-gradient(1600px 900px at 50% -200px, #1a1a1a 0%, #0b0b0b 55%);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-  font-weight: 400;
-}
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background:
+          radial-gradient(
+            700px 400px at 50% 25%,
+            rgba(100, 150, 255, 0.1),
+            transparent 70%
+          ),
+          radial-gradient(
+            1000px 600px at 50% 10%,
+            rgba(60, 95, 170, 0.38),
+            transparent 65%
+          ),
+          radial-gradient(1600px 900px at 50% -200px, #1a1a1a 0%, #0b0b0b 55%);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+          Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+      }
 
-    
-    a{ color: var(--link); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
 
-    .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
 
-header{
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(11,11,11,.82);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
-}
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(11, 11, 11, 0.82);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line);
+      }
 
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: .9rem 0;
-    }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.9rem 0;
+      }
 
-    .brand{
-      display:flex;
-      flex-direction: column;
-      line-height: 1.1;
-      color: inherit;
-      text-decoration: none;
-    }
+      .brand {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+        color: inherit;
+        text-decoration: none;
+      }
 
-    .brand strong{ font-size: 1.02rem; letter-spacing:.2px; }
-    .brand span{ font-size: .85rem; color: var(--muted2); }
+      .brand strong {
+        font-size: 1.02rem;
+        letter-spacing: 0.2px;
+      }
+      .brand span {
+        font-size: 0.85rem;
+        color: var(--muted2);
+      }
 
-    .navlinks{
-      display:flex;
-      gap:.9rem;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      font-size: .95rem;
-    }
+      .navlinks {
+        display: flex;
+        gap: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        font-size: 0.95rem;
+      }
 
-    .navlinks a{ color: var(--muted); }
-    .navlinks a:hover{ color: var(--text); text-decoration:none; }
+      .navlinks a {
+        color: var(--muted);
+      }
+      .navlinks a:hover {
+        color: var(--text);
+        text-decoration: none;
+      }
 
-    main{ padding: 2.8rem 0 3.8rem; }
+      main {
+        padding: 2.8rem 0 3.8rem;
+      }
 
-    /* this is the one that fixes your white wrapper */
-    main.wrap{ background: transparent; }
-/* Hero background depth layer */
-.hero{
-  position: relative;
-  padding-top: 1.2rem;
-  padding-bottom: .8rem;
-}
+      /* this is the one that fixes your white wrapper */
+      main.wrap {
+        background: transparent;
+      }
+      /* Hero background depth layer */
+      .hero {
+        position: relative;
+        padding-top: 1.2rem;
+        padding-bottom: 0.8rem;
+      }
 
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:-220px -120px auto -120px;
-  height: 620px;
-  pointer-events:none;
-  opacity:.16;
-  background-image:
-    linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);
-  background-size: 84px 84px;
-  mask-image: radial-gradient(circle at 50% 30%, rgba(0,0,0,1) 0%, rgba(0,0,0,.45) 52%, rgba(0,0,0,0) 74%);
-}
-.ctaRow{
-  display:flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 18px;
-}
-   /* Hero panel refinement */
-.hero .panel{
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 1.6rem;
-  border-radius: 18px;
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,.05),
-    rgba(255,255,255,.02)
-  );
-  border: 1px solid rgba(255,255,255,.08);
-}
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: -220px -120px auto -120px;
+        height: 620px;
+        pointer-events: none;
+        opacity: 0.16;
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.06) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.06) 1px,
+            transparent 1px
+          );
+        background-size: 84px 84px;
+        mask-image: radial-gradient(
+          circle at 50% 30%,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0.45) 52%,
+          rgba(0, 0, 0, 0) 74%
+        );
+      }
+      .ctaRow {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 18px;
+      }
+      /* Hero panel refinement */
+      .hero .panel {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 1.6rem;
+        border-radius: 18px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.02)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
 
+      .hero-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 12px auto 14px;
+      }
 
-<style>
-    
-  /* your existing CSS */
+      .hero-logo img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: min(340px, 78vw);
+        height: auto;
+        filter: drop-shadow(0 0 14px rgba(90, 150, 255, 0.35))
+          drop-shadow(0 0 34px rgba(90, 150, 255, 0.18));
+      }
 
-.hero-logo{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width: 100%;
-  margin: 12px auto 14px;
-}
-  
-.hero-logo img{
-  display:block;
-  margin: 0 auto;
-  max-width: 100%;
-  width: min(340px, 78vw);
-  height: auto;
-  filter:
-    drop-shadow(0 0 14px rgba(90, 150, 255, 0.35))
-    drop-shadow(0 0 34px rgba(90, 150, 255, 0.18));
-}
+      @media (max-width: 700px) {
+        .hero .panel {
+          padding: 1.4rem;
+        }
+        .hero-logo {
+          margin: 14px auto 18px;
+        }
+        .hero-logo img {
+          width: 84vw;
+        }
+      }
+    </style>
+  </head>
 
-@media (max-width: 700px){
-  .hero .panel{ padding: 1.4rem; }
-  .hero-logo{ margin: 14px auto 18px; }
-  .hero-logo img{ width: 84vw; }
-}
-
-</style>
-
-</head>
-
-
- <body id="top">
-  <header>
-    <div class="wrap">
-      <div class="nav">
-        <a href="#top" class="brand">
-           <strong>Critical Mass (MASS)</strong>
-           <span>Community experiment on Base</span>
+  <body id="top">
+    <header>
+      <div class="wrap">
+        <div class="nav">
+          <a href="#top" class="brand">
+            <strong>Critical Mass (MASS)</strong>
+            <span>Community experiment on Base</span>
           </a>
           <nav class="navlinks" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#token">Token</a>
-          <a href="#governance">Governance</a>
-          <a href="#transparency">Transparency</a>
-          <a href="#links">Links</a>
-          <a href="https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212" target="_blank" rel="noopener noreferrer">Contract</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="hero">
-      <div class="panel">
-       <div class="hero-logo">
-       <img src="/assets/logo2_transparent_cropped.png" alt="Critical Mass (MASS) logo">
-      </div>
-        <h1>Critical Mass (MASS)</h1>
-        <p>
-          A long-term community experiment on Base focused on shared ownership, transparency, and gradual governance.
-          Built slowly, documented openly.
-        </p>
-
-        <div class="ctaRow">
-          <!-- TODO: Replace the # with your exact URLs -->
-         <a class="btn primary" href="https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212" target="_blank" rel="noopener">View on BaseScan</a>
-          <a class="btn" href="#links">Project links</a>
-        </div>
-
-        <div class="fineprint">
-          No promises of returns. Nothing here is financial advice. Always do your own research.
+            <a href="#about">About</a>
+            <a href="#token">Token</a>
+            <a href="#governance">Governance</a>
+            <a href="#transparency">Transparency</a>
+            <a href="#links">Links</a>
+            <a
+              href="https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contract</a
+            >
+          </nav>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section id="about">
-      <div class="grid">
+    <main class="wrap">
+      <section class="hero">
         <div class="panel">
-          <h2>What it is</h2>
+          <div class="hero-logo">
+            <img
+              src="/assets/logo2_transparent_cropped.png"
+              alt="Critical Mass (MASS) logo"
+            />
+          </div>
+          <h1>Critical Mass (MASS)</h1>
+          <p>
+            A long-term community experiment on Base focused on shared
+            ownership, transparency, and gradual governance. Built slowly,
+            documented openly.
+          </p>
+
+          <div class="ctaRow">
+            <!-- TODO: Replace the # with your exact URLs -->
+            <a
+              class="btn primary"
+              href="https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212"
+              target="_blank"
+              rel="noopener"
+              >View on BaseScan</a
+            >
+            <a class="btn" href="#links">Project links</a>
+          </div>
+
+          <div class="fineprint">
+            No promises of returns. Nothing here is financial advice. Always do
+            your own research.
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="grid">
+          <div class="panel">
+            <h2>What it is</h2>
+            <p class="muted">
+              MASS is an experimental community token exploring how everyday
+              people can coordinate and learn together using transparent
+              on-chain tools. The base token is intentionally simple, while
+              governance is designed to evolve gradually over time.
+            </p>
+            <ul>
+              <li>Built on Base</li>
+              <li>Simple token design, no hidden mechanics</li>
+              <li>Documentation-first approach</li>
+              <li>Long-term direction: structured community governance</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h2>What it is not</h2>
+            <p class="muted">
+              MASS is not a guaranteed investment, not a fundraising vehicle,
+              and not a promise of future profits. It’s a public experiment in
+              coordination and transparency.
+            </p>
+            <ul>
+              <li>No “get rich quick” messaging</li>
+              <li>No unrealistic roadmap claims</li>
+              <li>No paid influencer promotions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="token">
+        <div class="panel">
+          <h2>Token details</h2>
           <p class="muted">
-            MASS is an experimental community token exploring how everyday people can coordinate and learn together using
-            transparent on-chain tools. The base token is intentionally simple, while governance is designed to evolve gradually over time.
+            Core facts and links. Keep it simple and verifiable.
+          </p>
+
+          <table class="table" role="table" aria-label="Token details">
+            <tr>
+              <th>Network</th>
+              <td>Base</td>
+            </tr>
+            <tr>
+              <th>Symbol</th>
+              <td>MASS</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>
+                <div class="copyrow">
+                  <span class="code" id="contractAddr"
+                    >0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212
+                  </span>
+                  <button
+                    class="copybtn"
+                    type="button"
+                    onclick="copyText('contractAddr')"
+                  >
+                    Copy
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Decimals</th>
+              <td>18</td>
+            </tr>
+            <tr>
+              <th>20,000,000,000 MASS</th>
+              <td>—</td>
+            </tr>
+            <tr>
+              <th>In progress</th>
+              <td>—</td>
+            </tr>
+          </table>
+          <div style="margin-top: 30px">
+            <h3 style="font-weight: 600; margin-bottom: 12px">Market</h3>
+
+            <p style="color: #cfcfcf; margin-bottom: 10px">
+              Live pool data and price chart available on GeckoTerminal.
+            </p>
+
+            <a
+              href="https://www.geckoterminal.com/base/pools/0xfc2355c83070051970becc367fc9fe14b0cf3b57"
+              target="_blank"
+              style="
+                display: inline-block;
+                padding: 10px 18px;
+                background: #f5f5f5;
+                color: #0b0b0b;
+                border-radius: 999px;
+                text-decoration: none;
+                font-weight: 600;
+              "
+            >
+              View on GeckoTerminal
+            </a>
+          </div>
+          <p class="fineprint"></p>
+        </div>
+      </section>
+
+      <section id="governance">
+        <div class="panel">
+          <h2>Governance approach</h2>
+          <p class="muted">
+            MASS is currently in a <strong>Founding Phase</strong>. During this
+            phase, the founding steward coordinates documentation,
+            infrastructure, and early decisions while governance processes are
+            designed openly.
+          </p>
+          <p class="muted">
+            Over time, governance is intended to evolve toward a structured
+            community model through clear proposals, transparent
+            decision-making, and reduced centralized influence.
           </p>
           <ul>
-            <li>Built on Base</li>
-            <li>Simple token design, no hidden mechanics</li>
-            <li>Documentation-first approach</li>
-            <li>Long-term direction: structured community governance</li>
+            <li>Founding Phase: stewardship + documentation</li>
+            <li>Later: community proposals and governance tooling</li>
+            <li>Long-term: regular participants guide decisions</li>
           </ul>
         </div>
+      </section>
 
+      <section id="transparency">
         <div class="panel">
-          <h2>What it is not</h2>
+          <h2>Transparency log</h2>
           <p class="muted">
-            MASS is not a guaranteed investment, not a fundraising vehicle, and not a promise of future profits.
-            It’s a public experiment in coordination and transparency.
+            Major changes and decisions are intended to be documented publicly
+            as the project evolves. This includes website edits, documentation
+            updates, and governance framework iterations.
           </p>
-          <ul>
-            <li>No “get rich quick” messaging</li>
-            <li>No unrealistic roadmap claims</li>
-            <li>No paid influencer promotions</li>
-          </ul>
+          <p class="fineprint">Last updated: <span id="lastUpdated"></span></p>
+        </div>
+      </section>
+
+      <section id="links">
+        <div class="panel">
+          <h2>Links</h2>
+          <p class="muted">Everything important in one place.</p>
+
+          <div class="pillrow">
+            <a
+              class="pill"
+              href="https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212"
+              target="_blank"
+              rel="noopener"
+              >BaseScan (Token)</a
+            >
+            <a
+              class="pill"
+              href="https://basescan.org/address/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212#code"
+              target="_blank"
+              rel="noopener"
+              >Contract Code</a
+            >
+            <a
+              class="pill"
+              href="Critical_Mass_Whitepaper_v1.1.pdf"
+              target="_blank"
+              rel="noopener"
+              >Whitepaper (v1.1)</a
+            >
+            <a
+              class="pill"
+              href="https://github.com/cheffer0723/criticalmasstoken-site"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="pill"
+              href="https://giveth.io/project/critical-mass-token"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Support on Giveth
+            </a>
+          </div>
+
+          <p class="fineprint"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="footgrid">
+          <div>
+            <strong style="color: var(--text)">Critical Mass (MASS)</strong
+            ><br />
+            <span>Experimental community token on Base.</span>
+          </div>
+          <div>
+            <strong style="color: var(--text)">Disclaimer</strong><br />
+            <span
+              >Nothing on this site is financial advice. Always do your own
+              research.</span
+            >
+          </div>
+        </div>
+        <div style="margin-top: 0.9rem">
+          <span
+            >© <span id="year"></span> Critical Mass. All rights reserved.</span
+          >
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section id="token">
-      <div class="panel">
-        <h2>Token details</h2>
-        <p class="muted">Core facts and links. Keep it simple and verifiable.</p>
+    <script>
+      function copyText(id) {
+        const el = document.getElementById(id);
+        const text = el ? el.innerText : "";
+        if (!text) return;
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            // tiny, non-annoying feedback
+            const btns = document.querySelectorAll("button.copybtn");
+            btns.forEach((b) => {
+              if (b && b.innerText === "Copy") b.innerText = "Copied";
+              setTimeout(() => {
+                if (b) b.innerText = "Copy";
+              }, 900);
+            });
+          })
+          .catch(() => {
+            /* ignore */
+          });
+      }
 
-        <table class="table" role="table" aria-label="Token details">
-          <tr>
-            <th>Network</th>
-            <td>Base</td>
-          </tr>
-          <tr>
-            <th>Symbol</th>
-            <td>MASS</td>
-          </tr>
-          <tr>
-            <th> </th>
-            <td>
-              <div class="copyrow">
-                <span class="code" id="contractAddr">0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212
-</span>
-                <button class="copybtn" type="button" onclick="copyText('contractAddr')">Copy</button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th>Decimals</th>
-            <td>18</td>
-          </tr>
-          <tr>
-            <th>20,000,000,000 MASS
-</th>
-            <td>—</td>
-          </tr>
-          <tr>
-            <th>In progress
-</th>
-            <td>—</td>
-          </tr>
-        </table>
-  <div style="margin-top:30px;">
-  <h3 style="font-weight:600; margin-bottom:12px;">Market</h3>
-
-  <p style="color:#cfcfcf; margin-bottom:10px;">
-    Live pool data and price chart available on GeckoTerminal.
-  </p>
-
-  <a href="https://www.geckoterminal.com/base/pools/0xfc2355c83070051970becc367fc9fe14b0cf3b57"
-     target="_blank"
-     style="display:inline-block;
-            padding:10px 18px;
-            background:#f5f5f5;
-            color:#0b0b0b;
-            border-radius:999px;
-            text-decoration:none;
-            font-weight:600;">
-    View on GeckoTerminal
-  </a>
-</div>
-        <p class="fineprint">
-        </p>
-      </div>
-    </section>
-
-    <section id="governance">
-      <div class="panel">
-        <h2>Governance approach</h2>
-        <p class="muted">
-          MASS is currently in a <strong>Founding Phase</strong>. During this phase, the founding steward coordinates documentation, infrastructure,
-          and early decisions while governance processes are designed openly.
-        </p>
-        <p class="muted">
-          Over time, governance is intended to evolve toward a structured community model through clear proposals, transparent decision-making,
-          and reduced centralized influence.
-        </p>
-        <ul>
-          <li>Founding Phase: stewardship + documentation</li>
-          <li>Later: community proposals and governance tooling</li>
-          <li>Long-term: regular participants guide decisions</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="transparency">
-      <div class="panel">
-        <h2>Transparency log</h2>
-        <p class="muted">
-          Major changes and decisions are intended to be documented publicly as the project evolves. This includes website edits,
-          documentation updates, and governance framework iterations.
-        </p>
-        <p class="fineprint">Last updated: <span id="lastUpdated"></span></p>
-      </div>
-    </section>
-
-    <section id="links">
-      <div class="panel">
-        <h2>Links</h2>
-        <p class="muted">Everything important in one place.</p>
-
-         <div class="pillrow">
-  <a class="pill" href="https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212" target="_blank" rel="noopener">BaseScan (Token)</a>
-  <a class="pill" href="https://basescan.org/address/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212#code" target="_blank" rel="noopener">Contract Code</a>
-  <a class="pill" href="Critical_Mass_Whitepaper_v1.1.pdf" target="_blank" rel="noopener">Whitepaper (v1.1)</a>
-  <a class="pill" href="https://github.com/cheffer0723/criticalmasstoken-site" target="_blank" rel="noopener">GitHub</a>
-  <a class="pill" href="https://giveth.io/project/critical-mass-token"  target="_blank" rel="noopener noreferrer">
-   Support on Giveth
-</a>
-        </div>
-
-        <p class="fineprint">
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div class="footgrid">
-        <div>
-          <strong style="color: var(--text);">Critical Mass (MASS)</strong><br />
-          <span>Experimental community token on Base.</span>
-        </div>
-        <div>
-          <strong style="color: var(--text);">Disclaimer</strong><br />
-          <span>Nothing on this site is financial advice. Always do your own research.</span>
-        </div>
-      </div>
-      <div style="margin-top: .9rem;">
-        <span>© <span id="year"></span> Critical Mass. All rights reserved.</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function copyText(id){
-      const el = document.getElementById(id);
-      const text = el ? el.innerText : "";
-      if(!text) return;
-      navigator.clipboard.writeText(text).then(()=>{
-        // tiny, non-annoying feedback
-        const btns = document.querySelectorAll("button.copybtn");
-        btns.forEach(b => {
-          if(b && b.innerText === "Copy") b.innerText = "Copied";
-          setTimeout(()=>{ if(b) b.innerText = "Copy"; }, 900);
-        });
-      }).catch(()=>{ /* ignore */ });
-    }
-
-    // Footer year + last updated (client-side, simple)
-    document.getElementById("year").innerText = new Date().getFullYear();
-    const d = new Date();
-    const opts = { year:"numeric", month:"long", day:"numeric" };
-    document.getElementById("lastUpdated").innerText = d.toLocaleDateString(undefined, opts);
-  </script>
-<footer style="margin-top:60px;padding:20px 0;border-top:1px solid #242424;text-align:center;font-size:14px;color:#a8a8a8;">
-  Market data powered by
-  <a href="https://www.geckoterminal.com/"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="color:#f5f5f5;text-decoration:none;">
-    GeckoTerminal
-  </a>
-</footer>
-</body>
+      // Footer year + last updated (client-side, simple)
+      document.getElementById("year").innerText = new Date().getFullYear();
+      const d = new Date();
+      const opts = { year: "numeric", month: "long", day: "numeric" };
+      document.getElementById("lastUpdated").innerText = d.toLocaleDateString(
+        undefined,
+        opts,
+      );
+    </script>
+    <footer
+      style="
+        margin-top: 60px;
+        padding: 20px 0;
+        border-top: 1px solid #242424;
+        text-align: center;
+        font-size: 14px;
+        color: #a8a8a8;
+      "
+    >
+      Market data powered by
+      <a
+        href="https://www.geckoterminal.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="color: #f5f5f5; text-decoration: none"
+      >
+        GeckoTerminal
+      </a>
+    </footer>
+  </body>
 </html>
-
