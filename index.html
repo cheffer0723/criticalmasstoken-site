@@ -65,14 +65,14 @@ body{
 
     .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
 
-    header{
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(11,11,11,.72);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-    }
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(11,11,11,.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
 
     .nav{
       display:flex;
@@ -111,8 +111,8 @@ body{
 /* Hero background depth layer */
 .hero{
   position: relative;
-  padding-top: 2.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 1.2rem;
+  padding-bottom: .8rem;
 }
 
 .hero::before{
@@ -138,7 +138,7 @@ body{
 .hero .panel{
   max-width: 860px;
   margin: 0 auto;
-  padding: 2.2rem;
+  padding: 1.6rem;
   border-radius: 18px;
   background: linear-gradient(
     180deg,
@@ -147,6 +147,7 @@ body{
   );
   border: 1px solid rgba(255,255,255,.08);
 }
+
 /* Atmospheric background layer */
 body{
   font-weight: 400;
@@ -163,20 +164,19 @@ body{
   justify-content:center;
   align-items:center;
   width: 100%;
-  margin: 18px auto 22px;
+  margin: 12px auto 14px;
 }
   
-  .hero-logo img{
+.hero-logo img{
   display:block;
   margin: 0 auto;
   max-width: 100%;
-  width: min(420px, 82vw);
+  width: min(340px, 78vw);
   height: auto;
   filter:
     drop-shadow(0 0 14px rgba(90, 150, 255, 0.35))
     drop-shadow(0 0 34px rgba(90, 150, 255, 0.18));
 }
-
 
 @media (max-width: 700px){
   .hero .panel{ padding: 1.4rem; }
