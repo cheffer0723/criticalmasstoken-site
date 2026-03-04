@@ -1,6 +1,6 @@
 Critical Mass (MASS)
 
-“In MASS, growth reduces control — the wider the distribution, the narrower the authority.”
+In MASS, growth reduces control — the wider the distribution, the narrower the authority.
 
 Critical Mass (MASS) is a long-term coordination framework on Base designed around staged power reduction. Advancement is threshold-based and non-discretionary. Authority contracts as participation and distribution expand.
 
