@@ -1,88 +1,129 @@
-Public-facing website for the Critical Mass (MASS) on-chain experiment, built for clarity, transparency, and long-term structure.
-
 Critical Mass (MASS)
 
-Critical Mass (MASS) is a long-term on-chain experiment deployed on the Base network. It explores collective attention, voluntary coordination, and structural governance evolution over extended time horizons.
+“In MASS, growth reduces control — the wider the distribution, the narrower the authority.”
 
-MASS is intentionally minimal. It does not promise financial return, does not provide yield, and does not embed governance mechanisms at launch. The project prioritizes structural clarity, transparency, and restraint over speed or speculation.
+Critical Mass (MASS) is a long-term coordination framework on Base designed around staged power reduction. Advancement is threshold-based and non-discretionary. Authority contracts as participation and distribution expand.
 
-Founding Phase
+⸻
 
-Critical Mass currently operates under a Founding Stewardship Phase.
+I. Purpose
 
-During this phase, the Founding Steward coordinates:
+MASS exists to study and implement structured decentralization over time.
 
-Infrastructure maintenance
+It does not promise yield.
+It does not guarantee governance at launch.
+It does not rely on urgency.
 
-Documentation updates
+Its objective is durability.
 
-Liquidity decisions
+⸻
 
-Governance research and structural design
+II. Founding Phase
 
-This phase exists to provide stability and reduce ambiguity during early development. It is not intended as permanent centralized control.
+MASS currently operates under a Founding Stewardship Phase.
 
-Governance Direction
+During this phase:
 
-MASS does not currently implement on-chain governance.
+• Infrastructure is maintained by the Founding Steward
+• Liquidity decisions are managed centrally
+• Governance mechanisms are not yet active
+• All structural evolution is publicly documented
 
-Future governance evolution, if pursued, will be:
+This phase exists for stability, not permanence.
 
-Documented publicly
+Current supply concentration reflects early-stage formation. Distribution health thresholds are expected to be unmet during Stage 0.
 
-Introduced incrementally
+⸻
 
-Aligned with supply distribution realities
+III. Governance Maturity Model
 
-Evaluated cautiously
+Progression requires:
+	1.	Minimum holder count
+	2.	Distribution health compliance
+	3.	Sustained compliance over defined time windows
 
-Decentralization is treated as a process, not a declaration.
+Advancement pauses if compliance falls below threshold.
 
-Token Details
+⸻
 
-Network: Base
+Stage 1 — Transparency Lock
 
-Standard: ERC-20
+Trigger:
+• 250 holders
+• No wallet > 15%
+• Top 10 wallets ≤ 65%
 
-Total Supply: 20,000,000,000 MASS
+Changes:
+• Public distribution dashboard
+• Liquidity policy locked
+• Steward roadmap changes require public notice window
 
-Decimals: 18
+⸻
 
-Minting: Disabled
+Stage 2 — Advisory Constraint
 
-Contract: 0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212
+Trigger:
+• 500 holders
+• No wallet > 12%
+• Top 10 wallets ≤ 55%
+• Compliance maintained for 30 consecutive days
 
-Repository Structure
+Changes:
+• 3–5 member Advisory Council formed
+• Structural changes require council sign-off
+• Governance v1 framework published
 
-assets/ — token logo and artwork
+⸻
 
-deployments/ — deployment records
+Stage 3 — Shared Execution
 
-contracts/ — contract references and documentation
+Trigger:
+• 1,000 holders
+• No wallet > 8%
+• Top 10 wallets ≤ 45%
+• Compliance maintained for 60 consecutive days
 
-Official Links
+Changes:
+• Multi-signature control for critical functions
+• Structured voting simulations begin
+• Decentralization timeline activated
 
-Website: https://criticalmasstoken.com
+⸻
 
-BaseScan: https://basescan.org/token/0x1DA4a1F4759aa62CCCfe697bc4c143C4ed238212
+IV. Distribution Philosophy
 
-Whitepaper (v1.1): https://criticalmasstoken.com/Critical_Mass_Whitepaper_v1.1.pdf
+MASS does not accelerate artificially.
 
-## Market Data
+Growth must be organic.
+Authority reduction must be earned.
+Distribution health matters more than speed.
 
-On-chain decentralized exchange data is publicly accessible via:
+⸻
 
-- GeckoTerminal: https://www.geckoterminal.com/base/pools/0xfc2355c83070051970becc367fc9fe14b0cf3b57
+V. Long-Term Direction
 
-Status
+MASS prioritizes:
 
-Critical Mass is an early-stage structural experiment.
+• Transparency over velocity
+• Constraint over charisma
+• Structure over speculation
+• Time over hype
 
-Documentation may evolve through versioned updates as governance structures and distribution alignment develop over time.
+⸻
 
-Disclaimer
+VI. Steward Allocation & Vesting
 
-MASS is an experimental digital token. Nothing in this repository or associated materials constitutes financial, legal, or investment advice. Holding or transferring MASS carries risk, including potential total loss.
+The Founding Steward is subject to transparent allocation disclosure.
 
+Any current or future steward allocations:
 
-_Last updated via GitHub Codespaces._
+• Will be publicly disclosed
+• Will be subject to time-based vesting or structured release
+• Will not be exempt from distribution health thresholds
+
+No allocation structure may override the Governance Maturity Model.
+
+Authority reduction applies universally, including to the Founding Steward.
+
+Decentralization is not a launch feature.
+It is a responsibility that matures.
