@@ -599,28 +599,21 @@
     </footer>
 
     <script>
-      function copyText(id) {
-        const el = document.getElementById(id);
-        const text = el ? el.innerText : "";
-        if (!text) return;
-        navigator.clipboard
-          .writeText(text)
-          .then(() => {
-            // tiny, non-annoying feedback
-            const btns = document.querySelectorAll("button.copybtn");
-            btns.forEach((b) => {
-              if (b && b.innerText === "Copy") b.innerText = "Copied";
-              setTimeout(() => {
-                if (b) b.innerText = "Copy";
-              }, 900);
-            });
-          })
-          .catch(() => {
-            /* ignore */
-          });
-      }
+    function copyText(id) {
+    const text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text);
 
-      // Footer year + last updated (client-side, simple)
+    const btn = event.target;
+    const original = btn.innerText;
+
+    btn.innerText = "Copied ✓";
+
+  setTimeout(() => {
+    btn.innerText = original;
+   }, 1200);
+  }
+    <script>
+    
       document.getElementById("year").innerText = new Date().getFullYear();
       const d = new Date();
       const opts = { year: "numeric", month: "long", day: "numeric" };
