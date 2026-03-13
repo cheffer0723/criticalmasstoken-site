@@ -1,4 +1,6 @@
-Critical Mass (MASS)
+![Critical Mass Logo](assets/logo2_transparent_cropped.png)
+
+# Critical Mass (MASS)
 
 In MASS, growth reduces control — the wider the distribution, the narrower the authority.
 
